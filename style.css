@@ -1,0 +1,202 @@
+body {
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#canvas2, #canvas2a, #canvas2b, #canvas2c {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#canvas {
+    background-image: url("img/grass.jpg")
+}
+
+#canvasMain {
+    position: relative;
+    width: 1000px;
+    height: 500;
+    margin: 0 auto;
+    margin-top: 10vh;
+    display: none;
+}
+
+h3 {
+    font-size: 30px;
+    color: rgb(173, 22, 22);
+}
+
+h2 {
+    color: rgb(173, 22, 22);
+    font-family: 'Orbitron', sans-serif;
+}
+
+#list, #listUsers, #lapUsers, #winner {
+    position: absolute;
+    left: -140px;
+    font-family: 'Impact', fantasy;
+    width: 20%;
+    height: 30vh;
+    background-color: black;
+    color: white;
+}
+
+#list {
+    top: -50px;
+}
+
+#listUsers {
+    bottom: -90px;
+}
+
+#lapUsers {
+    bottom: -90px;
+    left: 93%;
+}
+
+#winner {
+    border: 2px solid rgb(173, 22, 22);
+    top: -50px;
+    left: 94%;
+    display: none;
+}
+
+#h2W {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-animation-name: blink;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 3;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: none;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#menu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+p {
+    color: white;
+}
+
+.add {
+    border-radius: 6px;
+    padding: 10px;
+    background-color: white;
+}
+
+button:hover {
+    transition: 1s;
+    padding: 10px;
+    background-color: rgb(204, 201, 201);
+}
+
+.color {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    float: left;
+}
+
+.color:hover {
+    transition: 1s;
+    opacity: 0.5;
+}
+
+#colors1, #colors2, #colors3, #colors4 {
+    padding: 10px;
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.select {
+    border: rgb(63, 61, 61) 3px solid;
+    background-color: rgb(70, 68, 68);
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px;
+    position: relative;
+    float: left;
+    margin-left: 80px;
+}
+
+input, button {
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Bangers', cursive;
+    margin: 20px;
+}
+
+#start {
+    font-size: 20px;
+    margin-top: 70px;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgb(92, 92, 253);
+    border: rgb(54, 54, 177) 2px solid;
+    border-top: rgb(72, 72, 226) 2px solid;
+    border-left: rgb(72, 72, 226) 2px solid;
+}
+
+#start:hover {
+    transition: 1s;
+    background-color: rgb(204, 201, 201);
+    border: rgb(146, 144, 144) 2px solid;
+}

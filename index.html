@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Schlacke</title>
+
+    <script src="Users/User1.js"></script>
+    <script src="Users/User2.js"></script>
+    <script src="Users/User3.js"></script>
+    <script src="Users/User4.js"></script>
+
+    <script src="Main JS/Game.js"></script>
+
+    <script src="Main JS/Variables.js"></script>
+    <script src="Main JS/Board.js"></script>
+    <script src="Main JS/HtmlActions.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="menu">
+        <h3>ŻUŻEL</h3>
+        <p id="pStart">Liczba graczy: 01</p>
+        <div id="select1" class="select">
+            <input type="text" placeholder="Twój nick..." value="Gracz 1">
+            <input type="text" placeholder="Wybór klawisza..." value="ArrowUp">
+            <div id="colors1">
+                <div id="g" class="color" style="background-color: rgb(39, 156, 39)"></div>
+                <div id="b" class="color" style="background-color: rgb(92, 92, 253)"></div>
+                <div id="y" class="color" style="background-color: rgb(248, 206, 16)"></div>
+                <div id="p" class="color" style="background-color: rgb(199, 69, 90)"></div>
+            </div>
+            <button class="add">Dodaj usera</button>
+        </div>
+
+
+        <div id="select2" class="select">
+            <input type="text" placeholder="Twój nick...">
+            <input type="text" placeholder="Wybór klawisza...">
+            <div id="colors2">
+                <div id="g" class="color" style="background-color: rgb(39, 156, 39)"></div>
+                <div id="b" class="color" style="background-color: rgb(92, 92, 253)"></div>
+                <div id="y" class="color" style="background-color: rgb(248, 206, 16)"></div>
+                <div id="p" class="color" style="background-color: rgb(199, 69, 90)"></div>
+            </div>
+            <button class="add">Dodaj usera</button>
+        </div>
+
+        <div id="select3" class="select">
+            <input type="text" placeholder="Twój nick...">
+            <input type="text" placeholder="Wybór klawisza...">
+            <div id="colors3">
+                <div id="g" class="color" style="background-color: rgb(39, 156, 39)"></div>
+                <div id="b" class="color" style="background-color: rgb(92, 92, 253)"></div>
+                <div id="y" class="color" style="background-color: rgb(248, 206, 16)"></div>
+                <div id="p" class="color" style="background-color: rgb(199, 69, 90)"></div>
+            </div>
+            <button class="add">Dodaj usera</button>
+        </div>
+
+        <div id="select4" class="select">
+            <input type="text" placeholder="Twój nick...">
+            <input type="text" placeholder="Wybór klawisza...">
+            <div id="colors4">
+                <div id="g" class="color" style="background-color: rgb(39, 156, 39)"></div>
+                <div id="b" class="color" style="background-color: rgb(92, 92, 253)"></div>
+                <div id="y" class="color" style="background-color: rgb(248, 206, 16)"></div>
+                <div id="p" class="color" style="background-color: rgb(199, 69, 90)"></div>
+            </div>
+            <button class="add">Dodaj usera</button>
+        </div>
+
+        <button id="start">ZACZNIJ GRĘ</button>
+    </div>
+
+    <div id="canvasMain">
+        <div id="list">
+            <h1>Tablica wyników</h1>
+            <p>Zostało okrążeń: </p>
+            <h2>02</h2>
+        </div>
+        
+        <div id="listUsers">
+            <h1>Grają </h1>
+            <div id="luistUser1"></div>
+            <div id="luistUser2"></div>
+            <div id="luistUser3"></div>
+            <div id="luistUser4"></div>
+        </div>
+
+        <div id="lapUsers">
+            <h1>Okrążenia:  </h1>
+            <div id="lapUser1"></div>
+            <div id="lapUser2"></div>
+            <div id="lapUser3"></div>
+            <div id="lapUser4"></div>
+        </div>
+
+        <div id="winner">
+            <h1>Zwyciężył: </h1>
+            <h2 id="h2W">ja</h2>
+        </div>
+
+        <canvas id="user1" width="1000" height="500" style=" z-index: 99; position: absolute"></canvas>
+        <canvas id="user2" width="1000" height="500" style=" z-index: 99; position: absolute;"></canvas>
+        <canvas id="user3" width="1000" height="500" style=" z-index: 99; position: absolute;"></canvas>
+        <canvas id="user4" width="1000" height="500" style=" z-index: 99; position: absolute;"></canvas>
+
+        <canvas id="canvas" width="1000" height="500"></canvas>
+
+        <canvas id="canvas2" width="1000" height="500" style="position: absolute"></canvas>
+        <canvas id="canvas2a" width="1000" height="500" style="position: absolute"></canvas>
+        <canvas id="canvas2b" width="1000" height="500" style="position: absolute"></canvas>
+        <canvas id="canvas2c" width="1000" height="500" style="position: absolute"></canvas>
+    </div>
+</body>
+
+</html>
